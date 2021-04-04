@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Es Api Employees</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <link href="js.js" type="text/javascript">
+    <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+</head>
+
+<body onload="CaricaPagina()">
+    <br><br>
+    <form id="form">
+        <div class="sfondopersone">
+            <div class="titolo">
+                <h3>Manage <b>Employees</b>
+                    <a onclick="rimuovi()" style="margin-left: 50%">
+                        <img src="cancella.jpg" style="height: 30px; width: 80px; "></a>
+                    <a onclick="aggiungi()" style="margin-left: 1%">
+                        <img src="aggiungi.jpg" style="height: 30px; width: 150px; "></a>
+                </h3>
+            </div>
+
+            <div class="persone">
+                <table style=" width: 100%;" id="tabellapersone">
+                    <tr class="persona">
+                        <td>
+                            <input onclick="selezionaticheckbox(this)" class="form-check-input" type="checkbox" id="selected" style="margin-left: 1%">
+                        </td>
+                        <td style="margin-top: 10%;">
+                            <p><b>Name</b></p>
+                        </td>
+                        <td class="email" style="margin-top: 10%;">
+                            <p><b>Email</b></p>
+                        </td>
+                        <td class="address" style="margin-top: 10%;">
+                            <p><b>Address</b></p>
+                        </td>
+                        <td style="margin-top: 10%;">
+                            <p><b>Phone</b></p>
+                        </td>
+                        <td colspan="2" class="action" style="margin-top: 10%;">
+                            <p><b>Action</b></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+
+    <form id="newform">
+        <div class="sfondopersone">
+            <div class="titolo">
+                <h4>Manage <b>Employees</b>
+                </h4>
+            </div>
+            <div class="persone">
+                <div class="persona"><br>
+                    <div class="input-group mb-3">
+                        <input id="namepersona" type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="emailpersona" type="text" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="addresspersona" type="text" class="form-control" placeholder="Address" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="phonepersona" type="text" class="form-control" placeholder="Phone" required>
+                    </div>
+                    <div id="aggiungere">
+                        <a onclick="aggiungipersona()" style="margin-left: 1%" type="submit"><img src="aggiungi.jpg"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
