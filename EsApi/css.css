@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    align-items: center;
+}
+
+.sfondopersone {
+    background-color: whitesmoke;
+    width: 1000px;
+}
+
+.titolo {
+    background-color: rgb(35, 35, 88);
+    text-align: left;
+    color: white;
+    padding: 1%;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.persone {
+    width: 95%;
+    height: 70%;
+    margin: 2%;
+    margin-top: 1%;
+    margin-top: rgb(141, 141, 141);
+}
+
+.persona {
+    border-top: solid grey 0.2px;
+    align-items: left;
+    text-align: left;
+}
+
+.email {
+    width: 220px;
+}
+
+.address {
+    width: 220px;
+}
+
+.action {
+    width: 50px;
+}
